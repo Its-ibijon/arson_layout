@@ -17,5 +17,5 @@
 this layout will be modified in the future but likely not to heavily
 - [ ] Mouse input on keyboard
 - [ ] math notation
-- [ ] chorded words ->  example : `N + C + T   will print out  because`
+- [ ] chorded words ->  example : `N + C + T `  will print out  `because`
  
