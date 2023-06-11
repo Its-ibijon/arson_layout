@@ -14,7 +14,7 @@
    - `B` is backspace
    - `LUDR` is Left Up Down Right
 
-this layout will be modified in the future but likely not to heavily
+# V2 includes
 - [x] Capital letters
 - [x] Mouse input on keyboard
 - [x] math notation
