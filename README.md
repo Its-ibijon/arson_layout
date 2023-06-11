@@ -15,7 +15,8 @@
    - `LUDR` is Left Up Down Right
 
 this layout will be modified in the future but likely not to heavily
-- [/] Mouse input on keyboard
-- [/] math notation
-- [/] chorded words ->  example : `bcs`  will print out  `because`
+- [x] Capital letters
+- [x] Mouse input on keyboard
+- [x] math notation
+- [x] chorded words ->  example : `bcs`  will print out  `because`
  
