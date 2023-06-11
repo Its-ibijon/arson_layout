@@ -6,13 +6,7 @@
 # How it Works 
 - as seen in the image the `qwertyuiop[`  keys are the only keys that will output text 
 - this keyboard uses keys called layers to change what those keys do 
-- for example:
-   - holding `m` will print out `bcfumhgkl`
-   - `S` is shift 
-   - `W` is windows/GUI  
-   - `E` is enter 
-   - `B` is backspace
-   - `LUDR` is Left Up Down Right
+- for example: holding `m` will print out `bcfumhgkl`
 
 # V2 includes
 - [x] Capital letters
