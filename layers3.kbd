@@ -1,0 +1,65 @@
+;;
+;; This configuration language is Lisp-like. If you're unfamiliar with Lisp,
+;; don't be alarmed. The maintainer jtroo is also unfamiliar with Lisp. You
+;; don't need to know Lisp in-depth to be able to configure kanata.
+;;
+;; If you follow along with the examples, you should be fine. Kanata should
+;; also hopefully have helpful error messages in case something goes wrong.
+;; If you need help, you are welcome to ask.
+
+;; Only one defsrc is allowed.
+;;
+;; defsrc defines the keys that will be intercepted by kanata. The order of the
+;; keys matches with deflayer declarations and all deflayer declarations must
+;; have the same number of keys as defsrc. Any keys not listed in defsrc will
+;; be passed straight to the operating system.
+(defsrc
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  lsft z    x    c    v    b    n    m    ,    .    /    rsft
+)
+
+
+
+(deflayer L1 
+  _    a    r     s    n     bspc  _    _    spc  t   e    i    o    _
+  _    _    @num  @L0   lctl  _     lsft @L2  @L1  _   _    _ 
+)
+
+(deflayer L2
+  _    b    c    f    u    lmet  _       _    ret  h    d    m    l    _
+  _    _        @sym @L1   lctl _     lsft    @L0    @L1  _    _    _
+)
+
+(deflayer L0
+  _    j    x    w    q    k    _    _    v    p    g    y    z    _
+  _   _      @nav @L2    lctl  _    lsft  @L1    @L1  _    _ _
+ )
+
+
+(deflayer sym
+  _       grv    -    =    \ ,   _    _    .    [    ]    /    ;    _ 
+  _    _    _      _    lctl  _    lsft  _    @L1  _ _  _
+)
+
+
+(deflayer num
+  _    1    2    3    4    5    _    _    6    7    8    9    0    _
+  _    _    _  @nav lctl _    lsft  @sym    @L1  _    _      _
+)
+
+
+(deflayer nav
+  del  ins  end  home pgdn pgup _    _    esc  lft  up  down rght  _
+  _    _   _  _    lctl    _    lsft    lmet    @L1    _   _   _
+)
+
+(defalias
+  L0 (layer-switch L0)
+  L1 (layer-switch L1)
+  L2 (layer-switch L2)
+  sym (layer-switch sym)
+  num (layer-switch num)
+  nav (layer-switch nav)
+
+)
+
